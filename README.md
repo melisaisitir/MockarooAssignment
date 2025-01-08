@@ -1,10 +1,21 @@
-# MockarooAssignment
-create table employee (
-	id INT PRIMARY KEY,
-	name VARCHAR(50),
-	birthday DATE,
-	email VARCHAR(100)
+
+# MockarooAssignment - Employee Table Operations
+
+
+### 1. Create the `employee` Table
+
+```sql
+CREATE TABLE employee (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  birthday DATE,
+  email VARCHAR(100)
 );
+```
+
+### 2. Insert Data into the `employee` Table
+
+```sql
 INSERT INTO employee (id, name, birthday, email) VALUES
 (1, 'Shaylah Coiley', '2024-11-08', 'scoiley0@joomla.org'),
 (2, 'Poul Edghinn', '2024-07-12', 'pedghinn1@aboutads.info'),
@@ -56,7 +67,11 @@ INSERT INTO employee (id, name, birthday, email) VALUES
 (48, 'Delilah Bullier', '2024-07-18', 'dbullier1b@hhs.gov'),
 (49, 'Maryanna Arent', '2024-03-13', 'marent1c@scientificamerican.com'),
 (50, 'Catha Handyside', '2023-12-15', 'chandyside1d@163.com');
+```
 
+### 3. Update Records in the `employee` Table
+
+```sql
 UPDATE employee
 SET name = 'Melisa isitir'
 WHERE id = 1;
@@ -76,7 +91,11 @@ WHERE email = 'vhenaughan19@discuz.net';
 UPDATE employee
 SET name = 'Bob Cragoe', email = 'bcragoe13@flickr.com'
 WHERE id = 2;
+```
 
+### 4. Delete Records from the `employee` Table
+
+```sql
 DELETE FROM employee
 WHERE id = 50;
 
@@ -91,3 +110,4 @@ WHERE email = 'rkear14@tiny.cc';
 
 DELETE FROM employee
 WHERE name = 'Locke Nesbeth' AND id = 2;
+```
